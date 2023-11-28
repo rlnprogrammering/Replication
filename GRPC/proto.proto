@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option go_package = "grpc/proto";
+
+package GRPC;
+
+message BidInfo {
+    int32 BidderID = 1;
+    int32 Amount = 2;
+    int32 Timestamp = 3;
+}
+
+message Ack {
+    string Status = 1;
+}
+
+message ResultRequest {}
+
+message CurrentResult {
+    string Status = 1;
+    int32 HighestBid = 2;
+    int32 HighestBidderID = 3;
+}
+
+service AuctionService {
+    rpc Bid(BidInfo) returns (Ack);
+    rpc Result(ResultRequest) returns (CurrentResult);
+}

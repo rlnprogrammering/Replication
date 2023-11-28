@@ -1,0 +1,75 @@
+## CLIENT LOG:
+
+2023/11/28 17:50:12 Client: 0 trying to connect to server: :5001 
+2023/11/28 17:50:12 Client: 0 trying to connect to server: :5002 
+2023/11/28 17:50:12 Client: 0 trying to connect to server: :5003 
+2023/11/28 17:50:12 Client: 0 trying to connect to server: :5004 
+2023/11/28 17:50:16 Client: 1 trying to connect to server: :5001 
+2023/11/28 17:50:16 Client: 1 trying to connect to server: :5002 
+2023/11/28 17:50:16 Client: 1 trying to connect to server: :5003 
+2023/11/28 17:50:16 Client: 1 trying to connect to server: :5004 
+2023/11/28 17:50:21 Client: 0 recieved status from server 0: success 
+2023/11/28 17:50:21 Client: 0 recieved status from server 1: success 
+2023/11/28 17:50:21 Client: 0 recieved status from server 2: success 
+2023/11/28 17:50:21 Client: 0 recieved status from server 3: success 
+2023/11/28 17:50:21 Bid amount 10 from client 0 was accepted 
+2023/11/28 17:50:23 Client: 1 recieved status from server 0: success 
+2023/11/28 17:50:23 Client: 1 recieved status from server 1: success 
+2023/11/28 17:50:23 Client: 1 recieved status from server 2: success 
+2023/11/28 17:50:23 Client: 1 recieved status from server 3: success 
+2023/11/28 17:50:23 Bid amount 20 from client 1 was accepted 
+2023/11/28 17:50:36 (Client 0) Error making bid on server 0: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused" 
+2023/11/28 17:50:36 Client: 0 recieved status from server 1: success 
+2023/11/28 17:50:36 Client: 0 recieved status from server 2: success 
+2023/11/28 17:50:36 Client: 0 recieved status from server 3: success 
+2023/11/28 17:50:36 Bid amount 30 from client 0 was accepted 
+2023/11/28 17:50:40 (Client 1) Error making bid on server 0: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused" 
+2023/11/28 17:50:40 Client: 1 recieved status from server 1: fail 
+2023/11/28 17:50:40 Bid amount 25 from client 1 wasn't accepted 
+2023/11/28 17:50:45 (Client 1) Error getting result from server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2023/11/28 17:50:51 (Client 1) Error making bid on server 0: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused" 
+2023/11/28 17:50:51 Client: 1 recieved status from server 1: success 
+2023/11/28 17:50:51 Client: 1 recieved status from server 2: success 
+2023/11/28 17:50:51 Client: 1 recieved status from server 3: success 
+2023/11/28 17:50:51 Bid amount 31 from client 1 was accepted 
+2023/11/28 17:51:22 (Client 0) Error getting result from server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2023/11/28 17:51:22 (Client 0) Error getting result from server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5002: connect: connection refused"
+2023/11/28 17:51:25 (Client 0) Error making bid on server 0: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused" 
+2023/11/28 17:51:25 (Client 0) Error making bid on server 1: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5002: connect: connection refused" 
+2023/11/28 17:51:25 Client: 0 recieved status from server 2: success 
+2023/11/28 17:51:25 (Client 0) Error making bid on server 3: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5004: connect: connection refused" 
+2023/11/28 17:51:25 Bid amount 40 from client 0 was accepted 
+2023/11/28 17:51:29 (Client 1) Error getting result from server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused"
+2023/11/28 17:51:29 (Client 1) Error getting result from server: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5002: connect: connection refused"
+2023/11/28 17:53:14 (Client 1) Error making bid on server 0: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5001: connect: connection refused" 
+2023/11/28 17:53:14 (Client 1) Error making bid on server 1: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp :5002: connect: connection refused" 
+2023/11/28 17:53:14 Client: 1 recieved status from server 2: No new bids accepted. Auction is done 
+
+
+## SERVER LOG 
+
+2023/11/28 17:50:01 Starting server on port :5001 
+2023/11/28 17:50:01 Starting server on port :5002 
+2023/11/28 17:50:01 Starting server on port :5003 
+2023/11/28 17:50:01 Starting server on port :5004 
+2023/11/28 17:50:21 (server:5001) Bidder 0 has succesfully bid 10 
+2023/11/28 17:50:21 (server:5002) Bidder 0 has succesfully bid 10 
+2023/11/28 17:50:21 (server:5003) Bidder 0 has succesfully bid 10 
+2023/11/28 17:50:21 (server:5004) Bidder 0 has succesfully bid 10 
+2023/11/28 17:50:23 (server:5001) Bidder 1 has succesfully bid 20 
+2023/11/28 17:50:23 (server:5002) Bidder 1 has succesfully bid 20 
+2023/11/28 17:50:23 (server:5003) Bidder 1 has succesfully bid 20 
+2023/11/28 17:50:23 (server:5004) Bidder 1 has succesfully bid 20 
+2023/11/28 17:50:29 server:5001 Received termination signal. Shutting down...
+2023/11/28 17:50:36 (server:5002) Bidder 0 has succesfully bid 30 
+2023/11/28 17:50:36 (server:5003) Bidder 0 has succesfully bid 30 
+2023/11/28 17:50:36 (server:5004) Bidder 0 has succesfully bid 30 
+2023/11/28 17:50:40 (server:5002) Bidder 1 attempted to bid 25 - less than highest bid: 30 
+2023/11/28 17:50:51 (server:5002) Bidder 1 has succesfully bid 31 
+2023/11/28 17:50:51 (server:5003) Bidder 1 has succesfully bid 31 
+2023/11/28 17:50:51 (server:5004) Bidder 1 has succesfully bid 31 
+2023/11/28 17:51:10 server:5004 Received termination signal. Shutting down...
+2023/11/28 17:51:17 server:5002 Received termination signal. Shutting down...
+2023/11/28 17:51:25 (server:5003) Bidder 0 has succesfully bid 40 
+2023/11/28 17:52:01 Auction has ended 
+ The winner is: client 0 who bid 40 
